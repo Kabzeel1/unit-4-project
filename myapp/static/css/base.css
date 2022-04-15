@@ -1,0 +1,11 @@
+body{
+  font-size: 20px;
+  display: grid;
+  background-image: url("https://picsum.photos/id/1073/300" );
+}
+
+ul.nav{
+  background-color: rgb(181, 185, 189);
+  justify-content: space-around;
+}
+

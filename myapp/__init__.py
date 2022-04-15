@@ -18,8 +18,8 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 
 # set up connection to db
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://localhost:5432/kabzeel"
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL').replace("://", "ql://", 1)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///myblog"
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -52,3 +52,9 @@ app.register_blueprint(error_pages)
 #linking users views Blueprint
 from myapp.users.views import users
 app.register_blueprint(users)
+
+# Add this to the bottom of __init__.py
+
+# Linking and registering blog_posts views Blueprint
+from myapp.blog_posts.views import blog_posts
+app.register_blueprint(blog_posts)

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5ch;
+}
+
+h1{
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 40px;
+  text-shadow: 3px 3px;
+}
+
+p{
+  font-style: italic;
+  font-weight: 600;
+}
