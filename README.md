@@ -1,6 +1,6 @@
 # Kabzeel.  [Click Here](https://kabzeel.herokuapp.com/)
 # Intro About The App.
-This is a Flask/PSQL app that allows userss to tell the  latest about charlotte NC.
+This is a Flask/PSQL app that allows users to tell the  latest about charlotte NC.
 
 
 ![H.S](Untitled.png "Kabzeel")
